@@ -21,7 +21,4 @@ class DetailPersonViewController: UIViewController {
         mailLabel.text = "Mail: \(person.email)"
         title = person.fullName
     }
-    
-
-   
 }

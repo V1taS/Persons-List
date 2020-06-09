@@ -18,9 +18,7 @@ struct Person {
 }
 
 extension Person {
-    
     static func getListPerson() -> [Person] {
-        
         var persons: [Person] = []
         
         let names = DataManager.shared.firstNames.shuffled()
@@ -29,7 +27,6 @@ extension Person {
         let phones = DataManager.shared.phoneas.shuffled()
         
         for index in 0..<names.count {
-            
             let person = Person(firstName: names[index],
                                 lastName: surnames[index],
                                 email: emails[index],
